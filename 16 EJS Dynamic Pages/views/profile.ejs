@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile EJS</title>
+  </head>
+  <body>
+    <h1>
+      Welcome to profile page <%= userData.name%> and Your ID is <%=
+      userData.id%>
+    </h1>
+
+    <ul>
+      <% userData.skills.map(skill => { %>
+      <li><%= skill %></li>
+      <% }) %>
+    </ul>
+  </body>
+</html>
