@@ -9,7 +9,11 @@ const main = async () => {
     price: 45000,
     category: "Mobile",
   });
-  console.log(data);
+
+  //if data succesfully inserted then it will print out
+  if (data.acknowledged) {
+    console.log("Data inserted successfully");
+  }
 };
 
 main();
